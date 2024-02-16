@@ -29,6 +29,8 @@ class VK172:
             if   message.msgID == 'GSV':
                 self.sat = message.numMsg
             elif message.msgID == 'GGA':
+                if message.quality == 0:
+                    continue
                 self.time = message.time
                 self.pos.append((message.lat, message.lon, message.alt))
             # ignored messages
