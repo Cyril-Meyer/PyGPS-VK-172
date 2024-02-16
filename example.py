@@ -23,4 +23,7 @@ gps = vk.VK172(port)
 
 while True:
     time.sleep(1.0)
-    vk.print_position(gps.get_position())
+    pos = gps.get_position()
+
+    if pos is not None:
+        vk.print_position(pos)
