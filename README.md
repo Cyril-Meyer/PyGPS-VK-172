@@ -1,6 +1,7 @@
 # PyGPS-VK-172
 VK-172 USB GPS/GLONASS u-blox 7 Python Library
 
+
 ### Quick demo
 ```python
 import time
@@ -22,3 +23,19 @@ decode NMEA messages.
 | VK-172 USB GPS dongle |
 |:---------------------:|
 | ![image](https://github.com/Cyril-Meyer/PyGPS-VK-172/assets/69190238/8f3720c8-51e8-4b47-ada9-2d7f32fe93b5) |
+
+### Requirements
+```
+pynmeagps==1.0.33
+pyserial==3.5
+```
+
+### Run example
+```
+python example.py --list-port
+> COMX
+python example.py --port COMX
+> xx.xxxxxx° xx.xxxxxx°
+> xx.xxxxxx° xx.xxxxxx°
+```
+
